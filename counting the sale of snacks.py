@@ -4,17 +4,14 @@ def calculate_sales():
         "coke": {"small": 30, "medium": 50, "large": 70},
         "chips": {"small": 40, "medium": 80, "large": 120}
     }
-
     sales = {
         "popcorn": {"small": 0, "medium": 0, "large": 0},
         "coke": {"small": 0, "medium": 0, "large": 0},
         "chips": {"small": 0, "medium": 0, "large": 0}
     }
-
     for item in sales:
         for size in sales[item]:
             sales[item][size] = int(input(f"Введите количество проданного {item} размера {size}: "))
-
     total_sales = 0
     for item in sales:
         for size in sales[item]:
